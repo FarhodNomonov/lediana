@@ -4513,7 +4513,7 @@ mark {
   .main-slide__photo {
     margin: 0;
     position: absolute;
-    top: 0;
+    top: -6rem;
     z-index: -1;
     right: -15rem;
     width: 54rem;

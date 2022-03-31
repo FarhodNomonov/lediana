@@ -4893,7 +4893,7 @@ mark {
 }
 /*///////////////*/
 @media (min-width: 1024px) {
-  .reviews-list {
+  .swiper-wrapper.reviews-list {
     display: grid;
   }
 

@@ -263,43 +263,462 @@ function Home() {
           </h2>
           <div className="swiper-container pt-20">
             <ul className="reviews-list swiper-wrapper">
-              {[1, 2, 3, 4].map((data) => {
-                return (
-                  <li key={data} each={8} className="swiper-slide">
-                    <div class="review">
-                      <div class="review__photo">
-                        <div class="review__photo-inner">
-                          <img src={Review} alt="" />
-                        </div>
-                      </div>
-                      <div class="review-author">
-                        <div class="review-author__photo">
-                          <img src={Avatar} alt="" />
-                        </div>
-                        <div class="review-author__info">
-                          <div class="review-author__title">
-                            Victoria Venernaya
-                          </div>
-                          <div class="review-author__subtitle">Фотокнига</div>
-                        </div>
-                      </div>
-                      <div class="review__desc prose">
-                        <p>
-                          3 года со дня свадьбы пролетели, а столько всего
-                          пережито и столько всего хорошего ещё предстоит. Люблю
-                          тебя! А за замечательный фотобук спасибо @ledianaru
-                        </p>
-                      </div>
-                      <div class="rating">
-                        <Star className="rating__icon rating__icon--active" />
-                        <Star className="rating__icon rating__icon--active" />
-                        <Star className="rating__icon rating__icon--active" />
-                        <Star className="rating__icon rating__icon--active" />
-                      </div>
+              <li className="swiper-slide">
+                <div className="review">
+                  <div className="review__photo">
+                    <div className="review__photo-inner">
+                      <img src="/img/review.jpg" alt="" />
                     </div>
-                  </li>
-                );
-              })}
+                  </div>
+                  <div className="review-author">
+                    <div className="review-author__photo">
+                      <img src="/img/avatar.jpg" alt="" />
+                    </div>
+                    <div className="review-author__info">
+                      <div className="review-author__title">
+                        Victoria Venernaya
+                      </div>
+                      <div className="review-author__subtitle">Фотокнига</div>
+                    </div>
+                  </div>
+                  <div className="review__desc prose">
+                    <p>
+                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
+                      а&nbsp;столько всего пережито и&nbsp;столько всего
+                      хорошего ещё&nbsp;предстоит. Люблю тебя!
+                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
+                    </p>
+                  </div>
+                  <div className="rating">
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg aria-hidden="true" className="rating__icon">
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li className="swiper-slide">
+                <div className="review">
+                  <div className="review__photo">
+                    <div className="review__photo-inner">
+                      <img src="/img/review.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div className="review-author">
+                    <div className="review-author__photo">
+                      <img src="/img/avatar.jpg" alt="" />
+                    </div>
+                    <div className="review-author__info">
+                      <div className="review-author__title">
+                        Victoria Venernaya
+                      </div>
+                      <div className="review-author__subtitle">Фотокнига</div>
+                    </div>
+                  </div>
+                  <div className="review__desc prose">
+                    <p>
+                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
+                      а&nbsp;столько всего пережито и&nbsp;столько всего
+                      хорошего ещё&nbsp;предстоит. Люблю тебя!
+                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
+                    </p>
+                  </div>
+                  <div className="rating">
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg aria-hidden="true" className="rating__icon">
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li className="swiper-slide">
+                <div className="review">
+                  <div className="review__photo">
+                    <div className="review__photo-inner">
+                      <img src="/img/review.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div className="review-author">
+                    <div className="review-author__photo">
+                      <img src="/img/avatar.jpg" alt="" />
+                    </div>
+                    <div className="review-author__info">
+                      <div className="review-author__title">
+                        Victoria Venernaya
+                      </div>
+                      <div className="review-author__subtitle">Фотокнига</div>
+                    </div>
+                  </div>
+                  <div className="review__desc prose">
+                    <p>
+                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
+                      а&nbsp;столько всего пережито и&nbsp;столько всего
+                      хорошего ещё&nbsp;предстоит. Люблю тебя!
+                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
+                    </p>
+                  </div>
+                  <div className="rating">
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg aria-hidden="true" className="rating__icon">
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li className="swiper-slide">
+                <div className="review">
+                  <div className="review__photo">
+                    <div className="review__photo-inner">
+                      <img src="/img/review.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div className="review-author">
+                    <div className="review-author__photo">
+                      <img src="/img/avatar.jpg" alt="" />
+                    </div>
+                    <div className="review-author__info">
+                      <div className="review-author__title">
+                        Victoria Venernaya
+                      </div>
+                      <div className="review-author__subtitle">Фотокнига</div>
+                    </div>
+                  </div>
+                  <div className="review__desc prose">
+                    <p>
+                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
+                      а&nbsp;столько всего пережито и&nbsp;столько всего
+                      хорошего ещё&nbsp;предстоит. Люблю тебя!
+                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
+                    </p>
+                  </div>
+                  <div className="rating">
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg aria-hidden="true" className="rating__icon">
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li className="swiper-slide">
+                <div className="review">
+                  <div className="review__photo">
+                    <div className="review__photo-inner">
+                      <img src="/img/review.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div className="review-author">
+                    <div className="review-author__photo">
+                      <img src="/img/avatar.jpg" alt="" />
+                    </div>
+                    <div className="review-author__info">
+                      <div className="review-author__title">
+                        Victoria Venernaya
+                      </div>
+                      <div className="review-author__subtitle">Фотокнига</div>
+                    </div>
+                  </div>
+                  <div className="review__desc prose">
+                    <p>
+                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
+                      а&nbsp;столько всего пережито и&nbsp;столько всего
+                      хорошего ещё&nbsp;предстоит. Люблю тебя!
+                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
+                    </p>
+                  </div>
+                  <div className="rating">
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg aria-hidden="true" className="rating__icon">
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li className="swiper-slide">
+                <div className="review">
+                  <div className="review__photo">
+                    <div className="review__photo-inner">
+                      <img src="/img/review.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div className="review-author">
+                    <div className="review-author__photo">
+                      <img src="/img/avatar.jpg" alt="" />
+                    </div>
+                    <div className="review-author__info">
+                      <div className="review-author__title">
+                        Victoria Venernaya
+                      </div>
+                      <div className="review-author__subtitle">Фотокнига</div>
+                    </div>
+                  </div>
+                  <div className="review__desc prose">
+                    <p>
+                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
+                      а&nbsp;столько всего пережито и&nbsp;столько всего
+                      хорошего ещё&nbsp;предстоит. Люблю тебя!
+                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
+                    </p>
+                  </div>
+                  <div className="rating">
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg aria-hidden="true" className="rating__icon">
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li className="swiper-slide">
+                <div className="review">
+                  <div className="review__photo">
+                    <div className="review__photo-inner">
+                      <img src="/img/review.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div className="review-author">
+                    <div className="review-author__photo">
+                      <img src="/img/avatar.jpg" alt="" />
+                    </div>
+                    <div className="review-author__info">
+                      <div className="review-author__title">
+                        Victoria Venernaya
+                      </div>
+                      <div className="review-author__subtitle">Фотокнига</div>
+                    </div>
+                  </div>
+                  <div className="review__desc prose">
+                    <p>
+                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
+                      а&nbsp;столько всего пережито и&nbsp;столько всего
+                      хорошего ещё&nbsp;предстоит. Люблю тебя!
+                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
+                    </p>
+                  </div>
+                  <div className="rating">
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg aria-hidden="true" className="rating__icon">
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li className="swiper-slide">
+                <div className="review">
+                  <div className="review__photo">
+                    <div className="review__photo-inner">
+                      <img src="/img/review.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div className="review-author">
+                    <div className="review-author__photo">
+                      <img src="/img/avatar.jpg" alt="" />
+                    </div>
+                    <div className="review-author__info">
+                      <div className="review-author__title">
+                        Victoria Venernaya
+                      </div>
+                      <div className="review-author__subtitle">Фотокнига</div>
+                    </div>
+                  </div>
+                  <div className="review__desc prose">
+                    <p>
+                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
+                      а&nbsp;столько всего пережито и&nbsp;столько всего
+                      хорошего ещё&nbsp;предстоит. Люблю тебя!
+                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
+                    </p>
+                  </div>
+                  <div className="rating">
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      className="rating__icon rating__icon--active"
+                    >
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                    <svg aria-hidden="true" className="rating__icon">
+                      <use href="/svg/svg.svg#star" />
+                    </svg>
+                  </div>
+                </div>
+              </li>
             </ul>
             <div className="swiper-pagination mt-20" />
           </div>
@@ -320,6 +739,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <div className="home-footer">
         <div className="container home-footer__container">
           <div className="home-footer__title">Не знаете, что&nbsp;выбрать?</div>

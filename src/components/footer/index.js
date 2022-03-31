@@ -11,7 +11,6 @@ function Footer() {
             data-modal
             id="ask-question"
           >
-            {/* <div class="modal-backdrop" data-modal-backdrop></div> */}
             <div className="modal-content w-600 bg-divider" data-modal-content>
               <button
                 className="btn-base btn-close modal-close"

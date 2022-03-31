@@ -1,4 +1,6 @@
 import React from "react";
+import { Logo } from "./../export/index";
+import HeaderAvatar from "../../assets/img/avatar.jpg";
 
 function Header() {
   return (
@@ -6,7 +8,9 @@ function Header() {
       <header className="header">
         <div className="header-top">
           <div className="container">
-            <a href="/" className="logo" aria-label="Главная страница" />
+            <a href="/" className="logo" aria-label="Главная страница">
+              <Logo />
+            </a>
             <nav className="top-nav">
               <ul>
                 <li>
@@ -36,7 +40,7 @@ function Header() {
                   <span>Ebert</span>
                 </div>
                 <div className="account-preview__photo">
-                  <img src="/img/avatar.jpg" alt="..." />
+                  <img src={HeaderAvatar} alt="..." />
                 </div>
               </a>
               <ul className="account-preview__list">

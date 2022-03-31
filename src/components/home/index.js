@@ -1,5 +1,16 @@
 import React from "react";
 import SliderHome from "./slider";
+import InfoBlock1 from "../../assets/img/info-block-1.jpg";
+import InfoBlock2 from "../../assets/img/info-block-2.jpg";
+import InfoBlock3 from "../../assets/img/info-block-3.jpg";
+import InfoBlock4 from "../../assets/img/info-block-4.jpg";
+import InfoBlock5 from "../../assets/img/info-block-5.jpg";
+import InfoBlock6 from "../../assets/img/info-block-6.jpg";
+import InfoBlock7 from "../../assets/img/info-block-7.jpg";
+import InfoBlock8 from "../../assets/img/info-block-8.jpg";
+import Review from "../../assets/img/review.jpg";
+import Avatar from "../../assets/img/avatar.jpg";
+import { Star } from "../export";
 
 function Home() {
   return (
@@ -34,7 +45,7 @@ function Home() {
                       srcSet="/img/info-block-1-mob.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="/img/info-block-1.jpg" alt="" />
+                    <img src={InfoBlock1} alt="" />
                   </picture>
                 </div>
               </a>
@@ -65,7 +76,7 @@ function Home() {
                       srcSet="/img/info-block-2-mob.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="/img/info-block-2.jpg" alt="" />
+                    <img src={InfoBlock2} alt="" />
                   </picture>
                 </div>
               </a>
@@ -93,7 +104,7 @@ function Home() {
                       srcSet="/img/info-block-3-mob.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="/img/info-block-3.jpg" alt="" />
+                    <img src={InfoBlock3} alt="" />
                   </picture>
                 </div>
               </a>
@@ -122,7 +133,7 @@ function Home() {
                       srcSet="/img/info-block-4-mob.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="/img/info-block-4.jpg" alt="" />
+                    <img src={InfoBlock4} alt="" />
                   </picture>
                 </div>
               </a>
@@ -151,7 +162,7 @@ function Home() {
                       srcSet="/img/info-block-5-mob.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="/img/info-block-5.jpg" alt="" />
+                    <img src={InfoBlock5} alt="" />
                   </picture>
                 </div>
               </a>
@@ -180,7 +191,7 @@ function Home() {
                       srcSet="/img/info-block-6-mob.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="/img/info-block-6.jpg" alt="" />
+                    <img src={InfoBlock6} alt="" />
                   </picture>
                 </div>
               </a>
@@ -209,7 +220,7 @@ function Home() {
                       srcSet="/img/info-block-7-mob.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="/img/info-block-7.jpg" alt="" />
+                    <img src={InfoBlock7} alt="" />
                   </picture>
                 </div>
               </a>
@@ -237,7 +248,7 @@ function Home() {
                       srcSet="/img/info-block-8-mob.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="/img/info-block-8.jpg" alt="" />
+                    <img src={InfoBlock8} alt="" />
                   </picture>
                 </div>
               </a>
@@ -252,63 +263,43 @@ function Home() {
           </h2>
           <div className="swiper-container pt-20">
             <ul className="reviews-list swiper-wrapper">
-              <li each={8} className="swiper-slide">
-                <div className="review">
-                  <div className="review__photo">
-                    <div className="review__photo-inner">
-                      <img src="/img/review.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div className="review-author">
-                    <div className="review-author__photo">
-                      <img src="/img/avatar.jpg" alt="" />
-                    </div>
-                    <div className="review-author__info">
-                      <div className="review-author__title">
-                        Victoria Venernaya
+              {[1, 2, 3, 4].map((data) => {
+                return (
+                  <li key={data} each={8} className="swiper-slide">
+                    <div class="review">
+                      <div class="review__photo">
+                        <div class="review__photo-inner">
+                          <img src={Review} alt="" />
+                        </div>
                       </div>
-                      <div className="review-author__subtitle">Фотокнига</div>
+                      <div class="review-author">
+                        <div class="review-author__photo">
+                          <img src={Avatar} alt="" />
+                        </div>
+                        <div class="review-author__info">
+                          <div class="review-author__title">
+                            Victoria Venernaya
+                          </div>
+                          <div class="review-author__subtitle">Фотокнига</div>
+                        </div>
+                      </div>
+                      <div class="review__desc prose">
+                        <p>
+                          3 года со дня свадьбы пролетели, а столько всего
+                          пережито и столько всего хорошего ещё предстоит. Люблю
+                          тебя! А за замечательный фотобук спасибо @ledianaru
+                        </p>
+                      </div>
+                      <div class="rating">
+                        <Star className="rating__icon rating__icon--active" />
+                        <Star className="rating__icon rating__icon--active" />
+                        <Star className="rating__icon rating__icon--active" />
+                        <Star className="rating__icon rating__icon--active" />
+                      </div>
                     </div>
-                  </div>
-                  <div className="review__desc prose">
-                    <p>
-                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
-                      а&nbsp;столько всего пережито и&nbsp;столько всего
-                      хорошего ещё&nbsp;предстоит. Люблю тебя!
-                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
-                    </p>
-                  </div>
-                  <div className="rating">
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg aria-hidden="true" className="rating__icon">
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                  </div>
-                </div>
-              </li>
+                  </li>
+                );
+              })}
             </ul>
             <div className="swiper-pagination mt-20" />
           </div>

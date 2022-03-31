@@ -29,7 +29,6 @@ function Footer() {
                     Вопрос
                   </span>
                   <textarea
-                    name
                     className="field sm:field--outlined-dark"
                     rows={4}
                     placeholder="Вопрос"
@@ -41,7 +40,6 @@ function Footer() {
                     Телефон
                   </span>
                   <input
-                    name
                     className="field sm:field--outlined-dark"
                     placeholder="Телефон"
                   />
@@ -51,7 +49,6 @@ function Footer() {
                     Вотсап
                   </span>
                   <input
-                    name
                     className="field sm:field--outlined-dark"
                     placeholder="Вотсап"
                   />
@@ -61,7 +58,6 @@ function Footer() {
                     E-mail
                   </span>
                   <input
-                    name
                     className="field sm:field--outlined-dark"
                     placeholder="E-mail"
                   />

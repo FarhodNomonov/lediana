@@ -1,60 +1,28 @@
-/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */ /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-
-/*
-Document
-========
-*/
-
-/**
-Use a better box model (opinionated).
-*/
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
 
-/**
-Use a more readable tab size (opinionated).
-*/
-
 html {
   -o-tab-size: 4;
   tab-size: 4;
 }
-
-/**
-1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-*/
 
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/*
-Sections
-========
-*/
-
-/**
-Remove the margin in all browsers.
-*/
-
 body {
   margin: 0;
 }
 
-/**
-Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-
 body {
-  font-family: system-ui, -apple-system,
-    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: inherit;
 }
 
 /*
@@ -1047,138 +1015,133 @@ video {
   width: 1.6rem;
   height: 1.6rem;
 }
-/* 
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latohairline.woff2") format("woff2");
+  src: url("./assets/fonts/latohairline.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latohairlineitalic.woff2") format("woff2");
+  src: url("./assets/fonts/latohairlineitalic.woff2") format("woff2");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latothin.woff2") format("woff2");
+  src: url("./assets/fonts/latothin.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latothinitalic.woff2") format("woff2");
+  src: url("./assets/fonts/latothinitalic.woff2") format("woff2");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latolight.woff2") format("woff2");
+  src: url("./assets/fonts/latolight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latolightitalic.woff2") format("woff2");
+  src: url("./assets/fonts/latolightitalic.woff2") format("woff2");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latoregular.woff2") format("woff2");
+  src: url("./assets/fonts/latoregular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latoitalic.woff2") format("woff2");
+  src: url("./assets/fonts/latoitalic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latomedium.woff2") format("woff2");
+  src: url("./assets/fonts/latomedium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latomediumitalic.woff2") format("woff2");
+  src: url("./assets/fonts/latomediumitalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latosemibold.woff2") format("woff2");
+  src: url("./assets/fonts/latosemibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latosemibolditalic.woff2") format("woff2");
+  src: url("./assets/fonts/latosemibolditalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latobold.woff2") format("woff2");
+  src: url("./assets/fonts/latobold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latobolditalic.woff2") format("woff2");
+  src: url("./assets/fonts/latobolditalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latoheavy.woff2") format("woff2");
+  src: url("./assets/fonts/latoheavy.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latoheavyitalic.woff2") format("woff2");
+  src: url("./assets/fonts/latoheavyitalic.woff2") format("woff2");
   font-weight: 800;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latoblack.woff2") format("woff2");
+  src: url("./assets/fonts/latoblack.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/latoblackitalic.woff2") format("woff2");
+  src: url("./assets/fonts/latoblackitalic.woff2") format("woff2");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
-} */
+}
 :root {
-  /* font-size: 2.7vw;
-   @media screen and (min-width: 375px) {
-      font-size: 62.5%;
-   } */
   font-size: 62.5%;
 
   font-family: Lato, sans-serif;
@@ -2997,6 +2960,7 @@ mark {
   height: 100%;
   position: relative;
   transition-property: transform;
+  background: #f1f2f4 !important;
 }
 .swiper-slide-invisible-blank {
   visibility: hidden;
@@ -3086,12 +3050,12 @@ mark {
 :root {
   --swiper-pagination-color: #f1c0b2;
 }
-.swiper-pagination {
+/* .swiper-pagination {
   text-align: center;
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
-}
+} */
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
 }
@@ -4446,14 +4410,14 @@ mark {
     text-align: left;
   }
 }
-.main-slider::before {
+.main-slider:before {
   content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
   right: 0;
   height: 10.7rem;
-  /* background-image: url(../img/down-wave.svg); */
+  background-image: url(./assets/img/down-wave.svg);
   background-position: center bottom;
   z-index: 2;
 }
@@ -8781,4 +8745,7 @@ body:not(.cover-materials-active) .covers-layouts {
     font-size: 4.8rem;
     line-height: 1.1666666666666667;
   }
+}
+.swiper-fade .swiper-slide .swiper-slide {
+  pointer-events: auto !important;
 }

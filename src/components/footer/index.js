@@ -68,9 +68,14 @@ function Footer() {
                   </button>
                   <div className="text-secondary text-sm mt-8">
                     <p>
-                      Нажимая кнопку «Задать», я соглашаюсь с{" "}
-                      <a href="#">политикой конфиденциальности</a> и согласием
-                      на <a href="#">обработку персональных данных</a>
+                      Нажимая кнопку «Задать», я соглашаюсь с
+                      <a href="#politika" rel="noopener noreferrer">
+                        политикой конфиденциальности
+                      </a>
+                      и согласием на
+                      <a href="#politika" rel="noopener noreferrer">
+                        обработку персональных данных
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -135,8 +140,9 @@ function Footer() {
               <ul className="soc-links__list">
                 <li>
                   <a
-                    href="#"
+                    href="https://www.facebook.com"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="soc-links__link soc-links__link--facebook"
                     aria-label="Facebook"
                   >
@@ -147,8 +153,9 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.facebook.com"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="soc-links__link soc-links__link--youtube"
                     aria-label="Youtube"
                   >
@@ -159,8 +166,9 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.facebook.com"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="soc-links__link soc-links__link--vk"
                     aria-label="VK"
                   >
@@ -171,8 +179,9 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.facebook.com"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="soc-links__link soc-links__link--instagram"
                     aria-label="Instagram"
                   >
@@ -189,17 +198,17 @@ function Footer() {
           <div className="container grid grid-cols-2 sm:block pt-40 sm:pt-15 pb-80 sm:pb-24 text-tiny text-secondary">
             <ul className="inline-flex flex-col sm:flex-row gap-14 sm:gap-24 sm:mr-24">
               <li className="font-bold">
-                <a href="#" className="transition hover:text-primary">
+                <a href="# " className="transition hover:text-primary">
                   Качество
                 </a>
               </li>
               <li className="font-bold">
-                <a href="#" className="transition hover:text-primary">
+                <a href="# " className="transition hover:text-primary">
                   Отзывы
                 </a>
               </li>
               <li className="font-bold">
-                <a href="#" className="transition hover:text-primary">
+                <a href="# " className="transition hover:text-primary">
                   Оплата и Доставка
                 </a>
               </li>
@@ -210,7 +219,7 @@ function Footer() {
               </li>
             </ul>
             <div className="flex flex-col sm:flex-row xl:inline-flex gap-12 sm:gap-24 sm:mt-8 xl:mt-0">
-              <a href="#" className="transition hover:text-primary">
+              <a href="# " className="transition hover:text-primary">
                 lediana@mail.ru
               </a>
               <div className="inline-flex gap-8 sm:gap-16">
@@ -218,10 +227,10 @@ function Footer() {
                   <use href="/svg/svg.svg#phone" />
                 </svg>
                 <div className="space-y-4 sm:space-y-0 sm:contents">
-                  <a href="#" className="transition hover:text-primary">
+                  <a href="# " className="transition hover:text-primary">
                     89033405807
                   </a>
-                  <a href="#" className="transition hover:text-primary">
+                  <a href="# " className="transition hover:text-primary">
                     89033405807
                   </a>
                 </div>
@@ -237,7 +246,7 @@ function Footer() {
               <div className="copyrights">
                 ©2021 www.lediana.ru, Все права защищены
               </div>
-              <a href="#" className="transition hover:text-primary">
+              <a href="# " className="transition hover:text-primary">
                 Политика конфиденциальности
               </a>
             </div>

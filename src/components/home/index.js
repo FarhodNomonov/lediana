@@ -11,6 +11,8 @@ import InfoBlock8 from "../../assets/img/info-block-8.jpg";
 import Review from "../../assets/img/review.jpg";
 import Avatar from "../../assets/img/avatar.jpg";
 import { Star } from "../export";
+import { CircleArrowDown } from "./../export/index";
+import Cubs from "../../assets/img/cubs.png";
 
 function Home() {
   return (
@@ -290,63 +292,6 @@ function Home() {
                     </p>
                   </div>
                   <div className="rating">
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg aria-hidden="true" className="rating__icon">
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                  </div>
-                </div>
-              </li>
-              <li className="swiper-slide">
-                <div className="review">
-                  <div className="review__photo">
-                    <div className="review__photo-inner">
-                      <img src={Review} alt="" />
-                    </div>
-                  </div>
-                  <div className="review-author">
-                    <div className="review-author__photo">
-                      <img src={Review} alt="" />
-                    </div>
-                    <div className="review-author__info">
-                      <div className="review-author__title">
-                        Victoria Venernaya
-                      </div>
-                      <div className="review-author__subtitle">Фотокнига</div>
-                    </div>
-                  </div>
-                  <div className="review__desc prose">
-                    <p>
-                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
-                      а&nbsp;столько всего пережито и&nbsp;столько всего
-                      хорошего ещё&nbsp;предстоит. Люблю тебя!
-                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
-                    </p>
-                  </div>
-                  <div className="rating">
                     <Star className="rating__icon rating__icon--active" />
                     <Star className="rating__icon rating__icon--active" />
                     <Star className="rating__icon rating__icon--active" />
@@ -359,7 +304,7 @@ function Home() {
                 <div className="review">
                   <div className="review__photo">
                     <div className="review__photo-inner">
-                      <img src="/img/review.jpg" alt="" />
+                      <img src={Review} alt="" />
                     </div>
                   </div>
                   <div className="review-author">
@@ -382,33 +327,11 @@ function Home() {
                     </p>
                   </div>
                   <div className="rating">
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg aria-hidden="true" className="rating__icon">
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
                   </div>
                 </div>
               </li>
@@ -416,12 +339,12 @@ function Home() {
                 <div className="review">
                   <div className="review__photo">
                     <div className="review__photo-inner">
-                      <img src="/img/review.jpg" alt="" />
+                      <img src={Review} alt="" />
                     </div>
                   </div>
                   <div className="review-author">
                     <div className="review-author__photo">
-                      <img src="/img/avatar.jpg" alt="" />
+                      <img src={Avatar} alt="" />
                     </div>
                     <div className="review-author__info">
                       <div className="review-author__title">
@@ -439,261 +362,11 @@ function Home() {
                     </p>
                   </div>
                   <div className="rating">
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg aria-hidden="true" className="rating__icon">
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                  </div>
-                </div>
-              </li>
-              <li className="swiper-slide">
-                <div className="review">
-                  <div className="review__photo">
-                    <div className="review__photo-inner">
-                      <img src="/img/review.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div className="review-author">
-                    <div className="review-author__photo">
-                      <img src="/img/avatar.jpg" alt="" />
-                    </div>
-                    <div className="review-author__info">
-                      <div className="review-author__title">
-                        Victoria Venernaya
-                      </div>
-                      <div className="review-author__subtitle">Фотокнига</div>
-                    </div>
-                  </div>
-                  <div className="review__desc prose">
-                    <p>
-                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
-                      а&nbsp;столько всего пережито и&nbsp;столько всего
-                      хорошего ещё&nbsp;предстоит. Люблю тебя!
-                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
-                    </p>
-                  </div>
-                  <div className="rating">
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg aria-hidden="true" className="rating__icon">
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                  </div>
-                </div>
-              </li>
-              <li className="swiper-slide">
-                <div className="review">
-                  <div className="review__photo">
-                    <div className="review__photo-inner">
-                      <img src="/img/review.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div className="review-author">
-                    <div className="review-author__photo">
-                      <img src="/img/avatar.jpg" alt="" />
-                    </div>
-                    <div className="review-author__info">
-                      <div className="review-author__title">
-                        Victoria Venernaya
-                      </div>
-                      <div className="review-author__subtitle">Фотокнига</div>
-                    </div>
-                  </div>
-                  <div className="review__desc prose">
-                    <p>
-                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
-                      а&nbsp;столько всего пережито и&nbsp;столько всего
-                      хорошего ещё&nbsp;предстоит. Люблю тебя!
-                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
-                    </p>
-                  </div>
-                  <div className="rating">
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg aria-hidden="true" className="rating__icon">
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                  </div>
-                </div>
-              </li>
-              <li className="swiper-slide">
-                <div className="review">
-                  <div className="review__photo">
-                    <div className="review__photo-inner">
-                      <img src="/img/review.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div className="review-author">
-                    <div className="review-author__photo">
-                      <img src="/img/avatar.jpg" alt="" />
-                    </div>
-                    <div className="review-author__info">
-                      <div className="review-author__title">
-                        Victoria Venernaya
-                      </div>
-                      <div className="review-author__subtitle">Фотокнига</div>
-                    </div>
-                  </div>
-                  <div className="review__desc prose">
-                    <p>
-                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
-                      а&nbsp;столько всего пережито и&nbsp;столько всего
-                      хорошего ещё&nbsp;предстоит. Люблю тебя!
-                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
-                    </p>
-                  </div>
-                  <div className="rating">
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg aria-hidden="true" className="rating__icon">
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                  </div>
-                </div>
-              </li>
-              <li className="swiper-slide">
-                <div className="review">
-                  <div className="review__photo">
-                    <div className="review__photo-inner">
-                      <img src="/img/review.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div className="review-author">
-                    <div className="review-author__photo">
-                      <img src="/img/avatar.jpg" alt="" />
-                    </div>
-                    <div className="review-author__info">
-                      <div className="review-author__title">
-                        Victoria Venernaya
-                      </div>
-                      <div className="review-author__subtitle">Фотокнига</div>
-                    </div>
-                  </div>
-                  <div className="review__desc prose">
-                    <p>
-                      3&nbsp;года со&nbsp;дня&nbsp;свадьбы пролетели,
-                      а&nbsp;столько всего пережито и&nbsp;столько всего
-                      хорошего ещё&nbsp;предстоит. Люблю тебя!
-                      А&nbsp;за&nbsp;замечательный фотобук спасибо @ledianaru
-                    </p>
-                  </div>
-                  <div className="rating">
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg aria-hidden="true" className="rating__icon">
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
                   </div>
                 </div>
               </li>
@@ -703,9 +376,7 @@ function Home() {
           <div className="flex gap-24 mt-20 lg:mt-40">
             <button className="btn btn--secondary btn--md flex-grow justify-start btn--no-loader hidden lg:inline-flex">
               {/* <div class="loader wh-24 mr-8"></div> */}
-              <svg aria-hidden="true" className="fill-current wh-24 mr-8">
-                <use href="/svg/svg.svg#circle-arrow-down" />
-              </svg>
+              <CircleArrowDown className="fill-current wh-24 mr-8" />
               Загрузить ещё
             </button>
             <a
@@ -733,7 +404,7 @@ function Home() {
             </svg>
           </button>
           <div className="home-footer__photo">
-            <img src="/img/cubs.png" alt="" />
+            <img src={Cubs} alt="" />
           </div>
         </div>
       </div>

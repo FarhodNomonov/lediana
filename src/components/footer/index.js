@@ -1,4 +1,5 @@
 import React from "react";
+import { Facebook, Instagram, Vk, Youtube } from "../export";
 
 function Footer() {
   return (
@@ -145,9 +146,7 @@ function Footer() {
                     className="soc-links__link soc-links__link--facebook"
                     aria-label="Facebook"
                   >
-                    <svg aria-hidden="true">
-                      <use href="/svg/svg.svg#facebook" />
-                    </svg>
+                   <Facebook />
                   </a>
                 </li>
                 <li>
@@ -158,9 +157,7 @@ function Footer() {
                     className="soc-links__link soc-links__link--youtube"
                     aria-label="Youtube"
                   >
-                    <svg aria-hidden="true">
-                      <use href="/svg/svg.svg#youtube" />
-                    </svg>
+                   <Youtube />
                   </a>
                 </li>
                 <li>
@@ -171,9 +168,7 @@ function Footer() {
                     className="soc-links__link soc-links__link--vk"
                     aria-label="VK"
                   >
-                    <svg aria-hidden="true">
-                      <use href="/svg/svg.svg#vk" />
-                    </svg>
+                    <Vk />
                   </a>
                 </li>
                 <li>
@@ -184,9 +179,7 @@ function Footer() {
                     className="soc-links__link soc-links__link--instagram"
                     aria-label="Instagram"
                   >
-                    <svg aria-hidden="true">
-                      <use href="/svg/svg.svg#instagram" />
-                    </svg>
+                   <Instagram />
                   </a>
                 </li>
               </ul>

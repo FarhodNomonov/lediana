@@ -86,7 +86,7 @@ function Footer() {
             <ul className="col-count-2 md:flex md:flex-wrap -mx-4 md:-mx-12">
               <li>
                 <a
-                  href="/photobooks.html"
+                  href="/photobooks"
                   className="block p-4 md:p-12 transition hover:text-primary"
                 >
                   Фотокниги

@@ -1,6 +1,7 @@
 import React from "react";
 import { Logo } from "./../export/index";
 import HeaderAvatar from "../../assets/img/avatar.jpg";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,33 +9,33 @@ function Header() {
       <header className="header">
         <div className="header-top">
           <div className="container">
-            <a href="/" className="logo" aria-label="Главная страница">
+            <NavLink to={"/"} className="logo" aria-label="Главная страница">
               <Logo />
-            </a>
+            </NavLink>
             <nav className="top-nav">
               <ul>
                 <li>
-                  <a href="/reviews.html" className="link link--secondary">
+                  <NavLink to="/reviews" className="link link--secondary">
                     Отзывы
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="/quality.html" className="link link--secondary">
+                  <NavLink to="/quality" className="link link--secondary">
                     Качество
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    href="/shipping-and-payment.html"
+                  <NavLink
+                    to={"/shipping-and-payment"}
                     className="link link--secondary"
                   >
                     Доставка и оплата
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </nav>
             <div className="account-preview">
-              <a href="#" className="account-preview__link">
+              <NavLink to="/photos" className="account-preview__link">
                 <div className="account-preview__name">
                   <span>Alexander</span>
                   <span>Ebert</span>
@@ -42,26 +43,26 @@ function Header() {
                 <div className="account-preview__photo">
                   <img src={HeaderAvatar} alt="..." />
                 </div>
-              </a>
+              </NavLink>
               <ul className="account-preview__list">
                 <li>
-                  <a href="/account-orders.html">Мои заказы</a>
+                  <NavLink to="/account-orders">Мои заказы</NavLink>
                 </li>
                 <li>
-                  <a href="/account-drafts.html">Мои черновики</a>
+                  <NavLink to="/account-drafts">Мои черновики</NavLink>
                 </li>
                 <li>
-                  <a href="/account-sales.html">Персональные акции</a>
+                  <NavLink to="/account-sales">Персональные акции</NavLink>
                 </li>
                 <li>
-                  <a href="/account-edit.html">Личные данные</a>
+                  <NavLink to="/account-edit">Личные данные</NavLink>
                 </li>
                 <li>
-                  <a href="#">Выйти</a>
+                  <NavLink to="#">Выйти</NavLink>
                 </li>
               </ul>
             </div>
-            <a href="/cart.html" className="cart-preview">
+            <NavLink to="/cart" className="cart-preview">
               <i>
                 <svg
                   width={24}
@@ -81,7 +82,7 @@ function Header() {
                 <span>В корзине пусто</span>
                 <span>Пусто</span>
               </div>
-            </a>
+            </NavLink>
             <button
               className="btn-base mob-toggler"
               data-toggle-modal="mob-menu"
@@ -97,22 +98,22 @@ function Header() {
           <nav className="container">
             <ul>
               <li>
-                <a href="/photobooks.html">Фотокниги</a>
+                <NavLink to="/photobooks">Фотокниги</NavLink>
               </li>
               <li>
-                <a href="/photos.html">Фотографии</a>
+                <NavLink to="/photos">Фотографии</NavLink>
               </li>
               <li>
-                <a href="/canvas.html">Холсты</a>
+                <NavLink to="/canvas">Холсты</NavLink>
               </li>
               <li>
-                <a href="/cube.html">Фотокубики</a>
+                <NavLink to="/cube">Фотокубики</NavLink>
               </li>
               <li>
-                <a href="/card.html">Открытки</a>
+                <NavLink to="/card">Открытки</NavLink>
               </li>
               <li>
-                <a href="/cert-editor.html">Подарочная карта</a>
+                <NavLink to="/cert-editor">Подарочная карта</NavLink>
               </li>
             </ul>
           </nav>
@@ -124,27 +125,27 @@ function Header() {
         <div className="modal-content" data-modal-content>
           <ul className="mob-menu">
             <li>
-              <a href="/photobooks.html">Фотокниги</a>
+              <NavLink to="/photobooks">Фотокниги</NavLink>
             </li>
             <li>
-              <a href="/photos.html">Фотографии</a>
+              <NavLink to="/photos">Фотографии</NavLink>
             </li>
             <li>
-              <a href="/canvas.html">Холсты</a>
+              <NavLink to="/canvas">Холсты</NavLink>
             </li>
             <li>
-              <a href="/cube.html">Фотокубики</a>
+              <NavLink to="/cube">Фотокубики</NavLink>
             </li>
             <li>
-              <a href="/card.html">Открытки</a>
+              <NavLink to="/card">Открытки</NavLink>
             </li>
             <li>
-              <a href="/cert-editor.html">Подарочная карта</a>
+              <NavLink to="/cert-editor">Подарочная карта</NavLink>
             </li>
           </ul>
           <div className="account-preview">
-            <a
-              href="#"
+            <NavLink
+              to="#"
               className="account-preview__link"
               data-toggle="mob-account-preview-list"
             >
@@ -155,48 +156,48 @@ function Header() {
               <div className="account-preview__photo">
                 <img src="/img/avatar.jpg" alt="..." />
               </div>
-            </a>
+            </NavLink>
             <ul
               className="account-preview__list"
               data-dropdown
               id="mob-account-preview-list"
             >
               <li>
-                <a href="/account-orders.html">Мои заказы</a>
+                <NavLink to="/account-orders">Мои заказы</NavLink>
               </li>
               <li>
-                <a href="/account-drafts.html">Мои черновики</a>
+                <NavLink to="/account-drafts">Мои черновики</NavLink>
               </li>
               <li>
-                <a href="/account-sales.html">Персональные акции</a>
+                <NavLink to="/account-sales">Персональные акции</NavLink>
               </li>
               <li>
-                <a href="/account-edit.html">Личные данные</a>
+                <NavLink to="/account-edit">Личные данные</NavLink>
               </li>
               <li>
-                <a href="#">Выйти</a>
+                <NavLink to="#">Выйти</NavLink>
               </li>
             </ul>
           </div>
           <div className="top-nav">
             <ul>
               <li>
-                <a href="/reviews.html" className="link link--secondary">
+                <NavLink to="/reviews" className="link link--secondary">
                   Отзывы
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/quality.html" className="link link--secondary">
+                <NavLink to="/quality" className="link link--secondary">
                   Качество
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="/shipping-and-payment.html"
+                <NavLink
+                  to="/shipping-and-payment"
                   className="link link--secondary"
                 >
                   Доставка и оплата
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

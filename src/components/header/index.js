@@ -36,7 +36,7 @@ function Header() {
                   <span>Ebert</span>
                 </div>
                 <div className="account-preview__photo">
-                  <img src="/img/avatar.jpg" alt />
+                  <img src="/img/avatar.jpg" alt="..." />
                 </div>
               </a>
               <ul className="account-preview__list">
@@ -114,7 +114,7 @@ function Header() {
           </nav>
         </div>
       </header>
-    
+
       <div className="modal mob-menu-modal" hidden data-modal id="mob-menu">
         {/* <div class="modal-backdrop" data-modal-backdrop></div> */}
         <div className="modal-content" data-modal-content>
@@ -149,7 +149,7 @@ function Header() {
                 <span>Ebert</span>
               </div>
               <div className="account-preview__photo">
-                <img src="/img/avatar.jpg" alt />
+                <img src="/img/avatar.jpg" alt="..." />
               </div>
             </a>
             <ul

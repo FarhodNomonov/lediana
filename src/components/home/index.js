@@ -267,12 +267,12 @@ function Home() {
                 <div className="review">
                   <div className="review__photo">
                     <div className="review__photo-inner">
-                      <img src="/img/review.jpg" alt="" />
+                      <img src={Review} alt="" />
                     </div>
                   </div>
                   <div className="review-author">
                     <div className="review-author__photo">
-                      <img src="/img/avatar.jpg" alt="" />
+                      <img src={Avatar} alt="" />
                     </div>
                     <div className="review-author__info">
                       <div className="review-author__title">
@@ -324,12 +324,12 @@ function Home() {
                 <div className="review">
                   <div className="review__photo">
                     <div className="review__photo-inner">
-                      <img src="/img/review.jpg" alt="" />
+                      <img src={Review} alt="" />
                     </div>
                   </div>
                   <div className="review-author">
                     <div className="review-author__photo">
-                      <img src="/img/avatar.jpg" alt="" />
+                      <img src={Review} alt="" />
                     </div>
                     <div className="review-author__info">
                       <div className="review-author__title">
@@ -347,33 +347,11 @@ function Home() {
                     </p>
                   </div>
                   <div className="rating">
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="rating__icon rating__icon--active"
-                    >
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
-                    <svg aria-hidden="true" className="rating__icon">
-                      <use href="/svg/svg.svg#star" />
-                    </svg>
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
+                    <Star className="rating__icon rating__icon--active" />
                   </div>
                 </div>
               </li>
@@ -386,7 +364,7 @@ function Home() {
                   </div>
                   <div className="review-author">
                     <div className="review-author__photo">
-                      <img src="/img/avatar.jpg" alt="" />
+                      <img src={Avatar} alt="" />
                     </div>
                     <div className="review-author__info">
                       <div className="review-author__title">

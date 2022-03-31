@@ -4896,6 +4896,9 @@ mark {
   .swiper-wrapper.reviews-list {
     display: grid;
   }
+  .swiper-wrapper.reviews-list .swiper-slide {
+    background: transparent !important;
+  }
 
   .reviews-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));

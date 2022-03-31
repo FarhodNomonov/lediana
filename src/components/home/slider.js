@@ -1,17 +1,18 @@
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-// import "./styles.css";
-
-// import required modules
 import { EffectFade, Pagination } from "swiper";
+import Mainbanner8 from "../../assets/img/main-banner-8-mob.png";
+import Mainbanner7 from "../../assets/img/main-banner-7-mob.png";
+import Mainbanner6 from "../../assets/img/main-banner-6-mob.png";
+import Mainbanner5 from "../../assets/img/main-banner-5-mob.png";
+import Mainbanner4 from "../../assets/img/main-banner-4-mob.png";
+import Mainbanner3 from "../../assets/img/main-banner-3-mob.png";
+import Mainbanner2 from "../../assets/img/main-banner-2-mob.png";
+import Mainbanner1 from "../../assets/img/main-banner-1-mob.png";
 
 export default function SliderHome() {
   return (
@@ -44,7 +45,7 @@ export default function SliderHome() {
                     srcSet="/img/main-banner-8-mob.png"
                     media="(max-width: 767px)"
                   />
-                  <img src="/img/main-banner-8.png" alt="" />
+                  <img src={Mainbanner8} alt="..." />
                 </picture>
               </div>
             </div>
@@ -70,7 +71,7 @@ export default function SliderHome() {
                     srcSet="/img/main-banner-7-mob.png"
                     media="(max-width: 767px)"
                   />
-                  <img src="/img/main-banner-7.png" alt="" />
+                  <img src={Mainbanner7} alt="..." />
                 </picture>
               </div>
             </div>
@@ -96,7 +97,7 @@ export default function SliderHome() {
                     srcSet="/img/main-banner-6-mob.png"
                     media="(max-width: 767px)"
                   />
-                  <img src="/img/main-banner-6.png" alt="" />
+                  <img src={Mainbanner6} alt="..." />
                 </picture>
               </div>
             </div>
@@ -122,7 +123,7 @@ export default function SliderHome() {
                     srcSet="/img/main-banner-5-mob.png"
                     media="(max-width: 767px)"
                   />
-                  <img src="/img/main-banner-5.png" alt="" />
+                  <img src={Mainbanner5} alt="" />
                 </picture>
               </div>
             </div>
@@ -148,7 +149,7 @@ export default function SliderHome() {
                     srcSet="/img/main-banner-4-mob.png"
                     media="(max-width: 767px)"
                   />
-                  <img src="/img/main-banner-4.png" alt="" />
+                  <img src={Mainbanner4} alt="" />
                 </picture>
               </div>
             </div>
@@ -174,7 +175,7 @@ export default function SliderHome() {
                     srcSet="/img/main-banner-3-mob.png"
                     media="(max-width: 767px)"
                   />
-                  <img src="/img/main-banner-3.png" alt="" />
+                  <img src={Mainbanner3} alt="" />
                 </picture>
               </div>
             </div>
@@ -200,7 +201,7 @@ export default function SliderHome() {
                     srcSet="/img/main-banner-2-mob.png"
                     media="(max-width: 767px)"
                   />
-                  <img src="/img/main-banner-2.png" alt="" />
+                  <img src={Mainbanner2} alt="" />
                 </picture>
               </div>
             </div>
@@ -226,7 +227,7 @@ export default function SliderHome() {
                     srcSet="/img/main-banner-1-mob.png"
                     media="(max-width: 767px)"
                   />
-                  <img src="/img/main-banner-1.png" alt="" />
+                  <img src={Mainbanner1} alt="" />
                 </picture>
               </div>
             </div>
